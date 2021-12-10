@@ -1,0 +1,86 @@
+
+@function multiple-box-shadow($n) {
+    $value: "#{random(2000)}px #{random(2000)}px white";
+    @for $i from 2 through $n {
+        $value: "#{$value} , #{random(2000)}px #{random(2000)}px white";
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big: multiple-box-shadow(100);
+
+.bg-stars {
+    height: 100%;
+    background: radial-gradient(ellipse at center, var(--color-darkblue) 40%, var(--color-darkestblue) 100%);
+    overflow: hidden;
+    padding-right: 0;
+    padding-left: 0; 
+    position: relative;
+    z-index: 1
+}
+
+.stars {
+    background: transparent;
+
+    &:after {
+        content: " ";
+        position: relative;
+        background: transparent;
+    }
+}
+.stars1 {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 200s linear infinite;
+
+    &:after {
+        top: 2000px;
+        width: 1px;
+        height: 1px;
+        box-shadow: $shadows-small;
+    }
+}
+
+.stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 250s linear infinite;
+
+    &:after {
+        top: 1000px;
+        width: 2px;
+        height: 2px;
+        box-shadow: $shadows-medium;
+    }
+}
+
+.stars3 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 300s linear infinite;
+
+    &:after {
+        top: 1000px;
+        width: 2px;
+        height: 2px;
+        box-shadow: $shadows-big;
+    }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}

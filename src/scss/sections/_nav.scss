@@ -1,0 +1,38 @@
+header .navbar-light {
+    .navbar-toggler {
+        color: white;
+    }
+
+    .fa-hamburger {
+        color: white;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+        letter-spacing: -12px;
+    }
+}
+
+header .stars {
+    display: none;
+    
+    @include bp(md-min) {
+        display: block;
+    }
+}
+
+.nav-link.text-light:hover {
+    color: var(--color-teal) !important;
+}

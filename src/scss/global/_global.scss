@@ -1,0 +1,59 @@
+section {
+    padding: 3rem 0;
+
+    @include bp(md-min) {
+        padding: 6rem 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.btn {
+    position: relative;
+}
+
+.btn-primary {
+    background-color: var(--color-teal);
+    border-color: var(--color-teal);
+
+    &:hover {
+        background-color: var(--color-darkteal);
+        border-color: var(--color-darkteal);    
+    }
+}
+
+.btn-shadow {
+    box-shadow: 3px 3px 10px rgba(black, 0.5);    
+}
+
+.bg-cream {
+    background-color: var(--color-cream);
+    position: relative;
+    z-index: 1000;
+}
+
+.bg-teal {
+    background-color: var(--color-teal);
+    position: relative;
+    z-index: 1000;
+}
+
+.bg-rounded {
+    border-radius: 30px;
+
+    @include bp(md-min) {
+        border-radius: 100px;
+    }
+}
+
+.section-shadow {
+    box-shadow: 0 0 30px rgba(black, 0.5);
+}
+
+a:hover i {
+    color: var(--color-darkteal) !important;
+}

@@ -1,0 +1,43 @@
+@mixin bp($media...) {
+	@each $mediatype in $media {
+		@include bs-bp($mediatype) { @content; }
+	}
+}
+
+/**
+* Bootstrap 5 Breakpoints
+* @link https://getbootstrap.com/docs/5.0/layout/breakpoints/
+*/
+@mixin bs-bp($point) {
+	@if $point == sm-min {
+		@media (min-width: 576px) { @content; }
+	}
+	@else if $point == md-min { 
+		@media (min-width: 768px) { @content; }
+	}
+	@else if $point == lg-min { 
+		@media (min-width: 992px) { @content; }
+	}
+	@else if $point == xl-min {
+		@media (min-width: 1200px) { @content; }
+	}
+    @else if $point == xxl-min {
+		@media (min-width: 1400px) { @content; }
+    }
+    @else if $point == sm-max {
+		@media (max-width: 575.98px) { @content; }
+	}
+	@else if $point == md-max { 
+		@media (max-width: 767.98px) { @content; }
+	}
+	@else if $point == lg-max { 
+		@media (max-width: 991.98px) { @content; }
+	}
+	@else if $point == xl-max {
+		@media (max-width: 1199.98px) { @content; }
+	}
+    @else if $point == xxl-max {
+		@media (max-width: 1399.98px) { @content; }
+    }
+
+}

@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.font-family-h {
+    font-family: var(--font-family-heading);
+}
+
+p, span {
+    font-family: var(--font-family-body);
+}
+
+.font-family-p {
+    font-family: var(--font-family-body);
+}
+
+.text-light {
+    text-shadow: 3px 3px 10px black;
+}
+
+.text-shadow-none {
+    text-shadow: none;
+}
