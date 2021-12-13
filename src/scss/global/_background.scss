@@ -1,0 +1,19 @@
+.bg-cream {
+    background-color: var(--color-cream);
+    position: relative;
+    z-index: 1000;
+}
+
+.bg-teal {
+    background-color: var(--color-teal);
+    position: relative;
+    z-index: 1000;
+}
+
+.bg-rounded {
+    border-radius: 30px;
+
+    @include bp(md-min) {
+        border-radius: 100px;
+    }
+}

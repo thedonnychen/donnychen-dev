@@ -6,28 +6,13 @@ section {
     }
 }
 
+.section-shadow {
+    box-shadow: 0 0 30px rgba(black, 0.5);
+}
+
+
 img {
     max-width: 100%;
-}
-
-
-
-.btn {
-    position: relative;
-}
-
-.btn-primary {
-    background-color: var(--color-teal);
-    border-color: var(--color-teal);
-
-    &:hover {
-        background-color: var(--color-darkteal);
-        border-color: var(--color-darkteal);    
-    }
-}
-
-.btn-shadow {
-    box-shadow: 3px 3px 10px rgba(black, 0.5);    
 }
 
 .bg-cream {
@@ -50,10 +35,11 @@ img {
     }
 }
 
-.section-shadow {
-    box-shadow: 0 0 30px rgba(black, 0.5);
-}
-
 a:hover i {
     color: var(--color-darkteal) !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: var(--color-cream);
 }

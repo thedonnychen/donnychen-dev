@@ -4,7 +4,7 @@ export const Portfolio = () => {
     return (
         <section className="bg-cream section-shadow" id="portfolio">
             <div className="container text-center">
-                <h2 className="display-5 mb-5" data-aos="fade-up">PORTFOLIO</h2>
+                <h2 className="display-5 mb-5" data-aos="fade-up">Portfolio</h2>
                 <div className="row">
                     {PortfolioData.map((p,index) =>
                         <div className="col-sm-6 col-lg-4 mb-4" key={`${p.name}`} data-aos="fade-up" data-aos-duration="900">
