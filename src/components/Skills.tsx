@@ -7,7 +7,7 @@ export const Skills = () => {
             <div className="stars stars2"></div>
             <div className="stars stars3"></div>
             <div className="container">
-                <h2 className="display-5 text-center mb-5" data-aos="fade-up">SKILLS</h2>
+                <h2 className="display-5 text-center mb-5" data-aos="fade-up">Skills</h2>
                 <div className="row">
                     {SkillsData.map((skill, index) =>
                         <div className="col-lg-4 py-lg-3" key={`${index}`} data-aos="fade-up" data-aos-delay={`${(index+1)*200}`}>

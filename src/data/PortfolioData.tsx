@@ -4,7 +4,7 @@ export const PortfolioData = [
         "skills": "WordPress, PHP, WPML",
         "url": "https://google.ca",
         "github": "https://github.com/thedonnychen/dcsvan2",
-        "img": "dcs-vancouver.jpg"
+        "img": "dcsvancouver.jpg"
     },
     {
         "name": "JSun Studio",
@@ -26,7 +26,7 @@ export const PortfolioData = [
         "skills": "React, Bootstrap, TypeScript",
         "url": "https://donnychen.dev",
         "github": "https://github.com/thedonnychen/donnychen-dev",
-        "img": "jsun-studio.jpg"
+        "img": "donnychen-dev.jpg"
     },
     {
         "name": "WordPress Plugin",
