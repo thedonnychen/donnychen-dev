@@ -17,3 +17,11 @@
         border-radius: 100px;
     }
 }
+
+.bg-rounded {
+    border-radius: 30px;
+
+    @include bp(md-min) {
+        border-radius: 100px;
+    }
+}

@@ -20,8 +20,12 @@ header .navbar-light {
     }
 
     .navbar-brand {
-        font-size: 2rem;
-        letter-spacing: -12px;
+        font-size: 1.5rem;
+        // letter-spacing: -12px;
+
+        @include bp(md-min) {
+            padding: 0.5rem 1rem;
+        }
     }
 }
 

@@ -2,18 +2,19 @@ import { useState, useRef } from "react";
 import emailjs from 'emailjs-com';
 
 export const ContactForm = () => {
-    const [inputs, setInputs] = useState({});
-
-    const [messageClass, setMessageClass] = useState('opacity-0');
-    const [inputDisable, setInputDisable] = useState(false);
     const form = useRef<HTMLFormElement>(null);
 
+    /* Handle form inputs */
+    const [inputs, setInputs] = useState({});
     const handleChange = (event: React.SyntheticEvent) => {
         const name = (event.target as HTMLInputElement).name;
         const value = (event.target as HTMLInputElement).value;
         setInputs(values => ({ ...values, [name]: value }))
     }
 
+    /* Handle form submission and input/class changes */
+    const [messageClass, setMessageClass] = useState('opacity-0');
+    const [inputDisable, setInputDisable] = useState(false);
     const handleSubmit = (event: React.SyntheticEvent) => {
         event.preventDefault();
 
